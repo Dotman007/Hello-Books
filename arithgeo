@@ -24,10 +24,6 @@ else
     return -1;
 
 }
-console.log(arithgeo([2,3,4,5]));
-console.log(arithgeo([]));
-console.log(arithgeo([90,30,10]));
-console.log(arithgeo([3,5,7]));
 
 
 
