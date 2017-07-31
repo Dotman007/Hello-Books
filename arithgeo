@@ -1,13 +1,13 @@
-var arithgeo = function(array) 
+let arithgeo = function(array) 
 { 
 
-var difference = array[1] - array[0];
-var division = array[1] / array[0];
+let difference = array[1] - array[0];
+let division = array[1] / array[0];
 
-var arith = true;
-var geo = true;
+let arith = true;
+let geo = true;
 
-for(var i = 0; i < array.length - 1; i++)
+for(let i = 0; i < array.length - 1; i++)
 {
     if( array[i + 1] - array[i] !== difference )
       arith = false;
