@@ -1,0 +1,35 @@
+var arithgeo = function(array) 
+{ 
+
+var difference = array[1] - array[0];
+var division = array[1] / array[0];
+
+var arith = true;
+var geo = true;
+
+for(var i = 0; i < array.length - 1; i++)
+{
+    if( array[i + 1] - array[i] !== difference )
+      arith = false;
+    if(array[i + 1] / division !== array[i])
+      geo = false;
+}
+if(array.length === 0)
+	return "Empty"
+if(arith === true)
+    return "arithmetic";
+else if(geo === true)
+    return" geometric";
+else
+    return -1;
+
+}
+console.log(arithgeo([2,3,4,5]));
+console.log(arithgeo([]));
+console.log(arithgeo([2,3,6]));
+console.log(arithgeo([3,5,7]));
+
+
+
+
+
