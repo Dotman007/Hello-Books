@@ -1,4 +1,4 @@
-let arithgeo = (array) =>
+const arithgeo = (array) =>
 { 
 
 let difference = array[1] - array[0];
