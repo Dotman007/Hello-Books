@@ -1,29 +1,33 @@
-const arithgeo = (array) =>
-{ 
+module.exports ={
+	arithgeo : function(array) 
+	{ 
 
-let difference = array[1] - array[0];
-let division = array[1] / array[0];
+	let difference = array[1] - array[0];
+	let division = array[1] / array[0];
 
-let arith = true;
-let geo = true;
+	let arith = true;
+	let geo = true;
 
-for(let i = 0; i < array.length - 1; i++)
-{
-    if( array[i + 1] - array[i] !== difference )
-      arith = false;
-    if(array[i + 1] / division !== array[i])
-      geo = false;
+	for(let i = 0; i < array.length - 1; i++)
+	{
+	    if( array[i + 1] - array[i] !== difference )
+	      arith = false;
+	    if(array[i + 1] / division !== array[i])
+	      geo = false;
+	}
+	if(array.length === 0)
+		return 0
+	if(arith === true)
+	    return "Arithmetic";
+	else if(geo === true)
+	    return "Geometric";
+	else
+	    return -1;
+
+	}
+
 }
-if(array.length === 0)
-	return 0;
-if(arith === true)
-    return "arithmetic";
-else if(geo === true)
-    return" geometric";
-else
-    return -1;
 
-}
 
 
 
